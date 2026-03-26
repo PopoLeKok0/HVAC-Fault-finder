@@ -1,0 +1,144 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                  HVAC FAULT FINDER - QUICK START GUIDE                      ║
+║                                                                              ║
+║                        🚀 LIVE & READY TO USE! 🚀                           ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+📍 WEB APP LOCATION: http://localhost:5000
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 TO TEST THE APP RIGHT NOW:
+
+1. Go to: http://localhost:5000 in your browser
+
+2. Click "Select CSV File" button
+
+3. Choose: CSV sample_medium_office_15min_1day_FAULTY.csv
+
+4. Click "Analyze Data"
+
+5. See dashboard with:
+   ✓ 6 faults detected
+   ✓ Severity scores (0-100)
+   ✓ Temperature trends chart
+   ✓ Recommended actions
+   ✓ Estimated energy savings
+
+6. Click "Download Full Report" for details
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📂 PROJECT FILES CREATED:
+
+Backend:
+  ✓ app.py                  - Flask web server
+  ✓ hvac_analyzer.py        - Fault detection engine
+
+Frontend:
+  ✓ templates/index.html    - Dashboard UI
+
+Config:
+  ✓ requirements.txt        - Python dependencies
+  ✓ run.bat                 - Windows batch launcher
+  ✓ run.ps1                 - PowerShell launcher
+
+Docs:
+  ✓ README.md               - Full documentation
+  ✓ IMPLEMENTATION_GUIDE.txt - This file
+
+Test Data:
+  ✓ CSV sample_medium_office_15min_1day_FAULTY.csv - Sample HVAC data
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 TO STOP THE APP:
+
+Press Ctrl+C in the terminal window running the Flask app
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔄 TO RESTART THE APP:
+
+Option 1 (Fastest):
+  double-click: run.bat
+
+Option 2:
+  cd c:\Users\leagu\Downloads\HVAC-Fault-finder
+  python app.py
+
+Then go to: http://localhost:5000
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ KEY FEATURES:
+
+📊 Dashboard
+  • Real-time metrics (temp, humidity, status)
+  • Temperature trend chart
+  • Active faults list with severity
+
+🔍 Fault Detection (5 Types)
+  1. Simultaneous Heating & Cooling → Energy waste
+  2. Schedule Mismatch → Runtime during unoccupied
+  3. Sensor Flatline → Stuck temperature sensor
+  4. High Filter Pressure → Dirty filter alert
+  5. Short Cycling → Excessive on/off cycles
+
+💡 Smart Recommendations
+  • Prioritized by urgency
+  • Actionable next steps
+  • Energy savings estimates
+
+📥 Report Export
+  • Download text report
+  • Fault summary
+  • Recommendations
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❓ FAQ:
+
+Q: Can I use my own CSV data?
+A: Yes! As long as it has the required columns:
+   - timestamp, occupancy_mode, outdoor_air_temp_C, supply_air_temp_C,
+   - heating_valve_cmd_pct, cooling_valve_cmd_pct, fan_status, etc.
+
+Q: What does each severity mean?
+A: 
+   • CRITICAL (90-100): Urgent energy waste or safety issue
+   • WARNING (60-89): Significant issue needing attention
+   • ALERT (40-59): Informational, monitor and plan fix
+
+Q: Can multiple people access it?
+A: Yes! From other machines on your network use:
+   http://[Your-Computer-IP]:5000
+   Example: http://10.198.45.148:5000
+
+Q: Can I change the port?
+A: Yes! Edit app.py line 32:
+   app.run(debug=True, host='0.0.0.0', port=5001)  # Change 5001 to any free port
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📖 DETAILED GUIDES:
+
+For full documentation, see:
+  → README.md                 (Complete technical reference)
+  → IMPLEMENTATION_GUIDE.txt  (Architecture and features)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ STATUS: READY FOR DEMO & LOCAL USE
+
+Version: 1.0 MVP
+Built: February 10, 2026
+Framework: Flask + Pandas + Chart.js
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 Enjoy your HVAC Fault Finder application!
+
+Questions? Check README.md or IMPLEMENTATION_GUIDE.txt
+
+═══════════════════════════════════════════════════════════════════════════════

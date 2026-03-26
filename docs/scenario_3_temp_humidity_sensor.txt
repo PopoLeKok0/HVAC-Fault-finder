@@ -1,0 +1,13 @@
+Scenario 3: Comfort and Sensor Faults
+-------------------------------------
+Purpose: Demonstrate the system identifying environmental deviations caused by mechanical or sensor degradation.
+
+Key Characteristics:
+- Supply Air Temperature is consistently ~2.5 degrees above setpoint.
+- Return Air Humidity spikes to ~75%.
+- Zone Office 2 sensor flatlines completely, indicating a dead sensor.
+
+Expected Results from Application:
+- Supply Temperature Out of Range
+- High Humidity Levels
+- Zone Sensor Failure

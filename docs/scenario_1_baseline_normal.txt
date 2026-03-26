@@ -1,0 +1,12 @@
+Scenario 1: Baseline Normal Operation
+-------------------------------------
+Purpose: Demonstrate the system correctly identifying a healthy operation state.
+
+Key Characteristics:
+- All valve commands act sequentially, never simultaneously.
+- Supply air temperatures follow their setpoints strictly.
+- Fan runs only when building is occupied.
+- Humidity is kept in normal ranges (<60%).
+
+Expected Results from Application:
+- No faults detected.

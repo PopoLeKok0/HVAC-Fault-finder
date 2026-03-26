@@ -1,0 +1,13 @@
+Scenario 2: Energy Wasting Faults
+---------------------------------
+Purpose: Demonstrate the system identifying physical mechanical overlaps and control failures.
+
+Key Characteristics:
+- Heating and Cooling Valves open at the same time around timestamps 10-30.
+- Fan is toggling on/off rapidly around timestamps 40-60.
+- The unit runs the fan while the schedule commands UNOCCUPIED.
+
+Expected Results from Application:
+- Simultaneous Heating and Cooling
+- Short Cycling
+- Schedule Mismatch
