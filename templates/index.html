@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fault Finder - Dashboard</title>
     <!-- Favicon with cache buster -->
-    <link rel="icon" type="image/png" href="{{ url_for('static', filename='logo.png') }}?v=3">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='logo.png') }}?v=3">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}?v=4">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}?v=4">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
     <style>
@@ -28,10 +28,17 @@
        }
        
        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-       body { background-color: var(--bg-base); color: var(--text-main); padding-bottom: 50px;}
+       body { background-color: var(--bg-base); color: var(--text-main); }
 
        /* Logo styling */
-       .ff-logo { width: 55px; height: 55px; object-fit: contain; }
+       .ff-logo { 
+           width: 100px; 
+           height: 100px; 
+           object-fit: contain; 
+           margin-bottom: -20px; /* Pulls logo up slightly to align better with text */
+           margin-right: -16px; /* Pulls text closer to logo */
+           margin-left: -20px; /* Shifts logo slightly left if it had transparent space */
+       }
 
        /* ==========================
           LANDING PAGE STYLES
@@ -42,7 +49,7 @@
            position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid var(--border-color);
        }
        .brand { 
-           display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 700; letter-spacing: -0.5px;
+           display: flex; align-items: center; gap: 0px; font-size: 20px; font-weight: 700; letter-spacing: -0.5px;
            cursor: pointer; transition: opacity 0.3s;
        }
        .brand:hover { opacity: 0.8; }
@@ -306,10 +313,10 @@
         <hr style="border-top: 1px solid var(--border-color); border-bottom: none; margin: 0;">
 
         <!-- Footer -->
-        <footer style="background: var(--bg-darker); padding: 40px 5%; text-align: center; color: var(--text-muted); font-size: 13px;">
-            <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 15px;">
-                <img src="{{ url_for('static', filename='logo.png') }}" style="width: 30px; height: 30px; object-fit: contain;">
-                <span style="font-size: 16px; font-weight: 700; color: white;">Fault Finder</span>
+        <footer style="background: var(--bg-darker); padding: 20px 5%; text-align: center; color: var(--text-muted); font-size: 13px;">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 0px; margin-bottom: 10px;">
+                <img src="{{ url_for('static', filename='logo.png') }}" style="width: 50px; height: 50px; object-fit: contain; margin-top: 10px; margin-right: -6px; margin-left: -6px;">
+                <span style="font-size: 13px; font-weight: 700; color: white;">Fault Finder</span>
             </div>
             <p>&copy; 2026 Fault Finder Analytics. All rights reserved.</p>
         </footer>
