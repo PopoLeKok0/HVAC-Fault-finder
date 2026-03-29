@@ -622,10 +622,13 @@
                     },
                     scales: {
                         y: { 
+                            min: 10,
+                            max: 50,
                             grid: { color: 'rgba(55, 65, 81, 0.4)' }, 
                             ticks: { 
                                 color: '#94A3B8', 
-                                callback: function(value) { return value + ' AM'; }
+                                stepSize: 5,
+                                callback: function(value) { return value + ' °C'; }
                             },
                             display: true 
                         },
